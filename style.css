@@ -1,0 +1,139 @@
+:root {
+  --clr-dark-cyan: hsl(158, 36%, 37%);
+  --clr-cream: hsl(30, 38%, 92%);
+
+  --clr-very-dark-blue: hsl(212, 21%, 14%);
+  --clr-dark-grayish-blue: hsl(228, 12%, 48%);
+
+  --fs-body: 0.875rem;
+
+  --fw-500: 500;
+  --fw-700: 700;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  background-color: var(--clr-cream);
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--fs-body);
+  padding-inline: 1rem;
+  padding-block: 2rem;
+  max-width: 40rem;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.product-card {
+  display: grid;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 20px -20px black;
+
+  @media (width >= 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.product-image-container img {
+  border-start-start-radius: 1rem;
+  border-start-end-radius: 1rem;
+
+  @media (width >= 640px) {
+    border-end-start-radius: 1rem;
+    border-start-end-radius: 0rem;
+  }
+}
+
+.content-container {
+  padding: 2rem;
+}
+
+.eyebrow {
+  color: var(--clr-dark-grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: block;
+  margin-block-end: 1rem;
+  font-size: 0.75rem;
+}
+
+.heading {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 2rem;
+  line-height: 1em;
+  margin-block-end: 1.5rem;
+}
+
+.product-content {
+  color: var(--clr-dark-grayish-blue);
+  margin-block-end: 1.5rem;
+  line-height: 1.5em;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 1.5rem;
+
+  & .new-price {
+    font-family: 'Fraunces', sans-serif;
+    color: var(--clr-dark-cyan);
+    font-size: 2rem;
+  }
+
+  & .old-price {
+    color: var(--clr-dark-grayish-blue);
+  }
+}
+
+.add-to-cart {
+  display: block;
+  width: 100%;
+  background-color: var(--clr-dark-cyan);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+
+  & div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  &:where(:hover, :focus-visible) {
+    filter: brightness(75%);
+    outline-color: var(--clr-dark-cyan);
+    outline-offset: 2px;
+  }
+}
+
+.attribution {
+  position: absolute;
+  inset-inline: auto;
+  inset-block-end: 0.5rem;
+
+  & a {
+    color: var(--clr-dark-cyan);
+  }
+}
