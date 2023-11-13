@@ -4,9 +4,9 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Links
 
-- [Source Code URL]()
-- [Frontend Mentor Solution URL]()
-- [Live Site URL]()
+- [Source Code URL](https://github.com/waleedmumtaz/fem_product-preview-card-component)
+- [Frontend Mentor Solution URL](https://www.frontendmentor.io/solutions/product-preview-card-component-mfIlRCZpZe)
+- [Live Site URL](https://incandescent-narwhal-c5f3eb.netlify.app/)
 
 ## Built with
 
